@@ -84,30 +84,46 @@ textarea {
    Author's custom styles
    ========================================================================== */
 .box{
-  height: 4em;
-  width: 4em;
+  height: 3em;
+  width: 3em;
   border:1px solid darkgrey;
-  display:inline-block
 }
-.boxes{
-  display:flex;
-  justify-content: space-between;
+.container{
+  position: relative;
+  border: 1px solid #000;
+  height: 10em;
+  width: 10em;
 }
-.bkg-red{background-color: red;
-
+.bkg-red{
+  background-color: red;
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
 .bkg-blue{background-color: blue;
-
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
+
 .bkg-green{
   background-color: green;
+  position: absolute;
+  top: 25px;
+  left: 25px;
 }
 .bkg-red:hover,
 .bkg-blue:hover,
 .bkg-green:hover{
   box-shadow:0.5em 0.5em 0.5em rgba(0,0,0,0.5) inset;
 }
-
+.icon-container{
+  position:relative;
+}
+.icon-container i {
+  position:absolute;
+}
+#icon1{ color:red;}
 
 /* ==========================================================================
    Helper classes
